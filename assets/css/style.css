@@ -426,6 +426,121 @@ body {
         gap: 0.5rem;
     }
 }
+
+/* Presskit Layout inside Rabbit Hole */
+.rh-presskit-layout {
+    display: flex;
+    gap: 3rem;
+    height: calc(100vh - 250px);
+    max-width: 100% !important;
+}
+
+.rh-presskit-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.rh-presskit-info h3 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.rh-presskit-info p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.presskit-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2.5rem;
+}
+
+.presskit-features li {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(227, 226, 221, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.presskit-features li strong {
+    width: 160px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.presskit-meta {
+    display: flex;
+    gap: 2rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(227, 226, 221, 0.2);
+    padding-top: 1.5rem;
+}
+
+.presskit-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.presskit-meta span {
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.rh-presskit-viewer {
+    flex: 1.8;
+    height: 100%;
+    border: 2px solid var(--bg-color);
+    background: #000;
+    box-shadow: 10px 10px 0px rgba(227, 226, 221, 0.1);
+}
+
+/* Mobile responsive layout */
+@media (max-width: 1024px) {
+    .rh-presskit-layout {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    .rh-presskit-viewer {
+        height: 600px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .rh-presskit-viewer {
+        height: 400px;
+    }
+    
+    .presskit-features li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .presskit-features li strong {
+        width: auto;
+    }
+}
+
 /* Toast */
 .toast {
     position: fixed;

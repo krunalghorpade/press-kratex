@@ -98,11 +98,11 @@
             </a>
 
             <!-- Block 09: Presskit -->
-            <a href="https://www.dropbox.com/scl/fi/6wg5ods0spgbrsol9w6er/Kratex-Presskit-2026.pdf?rlkey=x16e2eyuwok8pal6nlc7byi6q&st=b7ksqdpx&dl=0" target="_blank" class="b-block">
+            <button class="b-block open-window" data-target="rh-presskit">
                 <svg class="tangram" viewBox="0 0 100 100"><polygon points="0,0 100,0 0,100" fill="currentColor"/></svg>
                 <div class="center-content"><h2>PRESSKIT</h2></div>
                 <div class="corner-label">[09]<br>Kit.pdf</div>
-            </a>
+            </button>
 
             <!-- Block 10: Kratex TV -->
             <a href="http://tv.kratex.in" target="_blank" class="b-block">
@@ -214,6 +214,44 @@ A visionary artist, Kratex is reshaping the global electronic music scene. His b
         <div class="rh-footer">
             <button class="os-btn copy-btn" data-target="target-bio">COPY TEXT</button>
             <a href="#" class="os-btn">DOWNLOAD PDF</a>
+        </div>
+    </div>
+
+    <!-- RH: Presskit -->
+    <div class="rabbit-hole" id="rh-presskit">
+        <div class="rh-header">
+            <h2 class="rh-title">PRESSKIT</h2>
+            <button class="rh-close win-close">CLOSE [X]</button>
+        </div>
+        <div class="rh-content rh-presskit-layout">
+            <div class="rh-presskit-info">
+                <div>
+                    <h3>Kratex Official Presskit 2026</h3>
+                    <p>The ultimate collection of assets for press, bookings, and promotional coverage. Pioneer of the M-House genre.</p>
+                    
+                    <ul class="presskit-features">
+                        <li><strong>Artist Bio:</strong> Comprehensive profile & milestones</li>
+                        <li><strong>Hi-Res Press Shots:</strong> Studio & live show photography</li>
+                        <li><strong>Technical Rider:</strong> Sound, lights, & staging requirements</li>
+                        <li><strong>Brand Assets:</strong> Official logos & visual assets</li>
+                    </ul>
+                </div>
+
+                <div class="presskit-meta">
+                    <div><span>File Type</span>PDF Document</div>
+                    <div><span>File Size</span>10.8 MB</div>
+                    <div><span>Year</span>2026</div>
+                </div>
+            </div>
+            
+            <div class="rh-presskit-viewer">
+                <iframe src="assets/pdf/kratex_presskit_2026.pdf" type="application/pdf" width="100%" height="100%" style="border: none; border-radius: 4px;"></iframe>
+            </div>
+        </div>
+        <div class="rh-footer">
+            <a href="assets/pdf/kratex_presskit_2026.pdf" target="_blank" class="os-btn">OPEN IN NEW TAB ↗</a>
+            <a href="assets/pdf/kratex_presskit_2026.pdf" download="Kratex_Presskit_2026.pdf" class="os-btn">DOWNLOAD PDF 📥</a>
+            <button class="os-btn small-copy" data-copy="assets/pdf/kratex_presskit_2026.pdf">COPY LINK 🔗</button>
         </div>
     </div>
 
@@ -336,6 +374,12 @@ A visionary artist, Kratex is reshaping the global electronic music scene. His b
         // Inject data into modals on load
         document.getElementById('target-brief').textContent = document.getElementById('brief-data').textContent;
         document.getElementById('target-bio').textContent = document.getElementById('bio-data').textContent;
+
+        // Set dynamic copy link for presskit
+        const pkCopyBtn = document.querySelector('#rh-presskit .small-copy');
+        if (pkCopyBtn) {
+            pkCopyBtn.setAttribute('data-copy', window.location.origin + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/assets/pdf/kratex_presskit_2026.pdf');
+        }
     </script>
 </body>
 </html>
