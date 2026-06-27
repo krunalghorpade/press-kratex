@@ -1,33 +1,11 @@
-<?php // EPK Entry Point ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRATEX | PRESS</title>
-    <meta name="description" content="Kratex Electronic Press Kit - Press & Technical Assets. Pioneer of M-House.">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <div class="container">
-        
-        <!-- Top Nav -->
-        <nav class="top-nav">
-            <div>KRATEX</div>
-            <div>Home / Press / Assets</div>
-            <div>Booking ↗</div>
-        </nav>
+import re
 
-        <!-- Huge Hero -->
-        <header class="hero">
-            <h1>Kratex Press Info</h1>
-        </header>
-        
-        <div class="view-toggle">
-            Index / Grid view
-        </div>
+with open("index.php", "r") as f:
+    content = f.read()
 
-        <!-- Masonry / Grid -->
+# Replace the grid
+old_grid_pattern = re.compile(r'<!-- Masonry / Grid -->(.*?)<!-- Hidden Data -->', re.DOTALL)
+new_grid = """<!-- Masonry / Grid -->
         <main class="b-grid">
             
             <!-- Highlight: Bio & One Pager -->
@@ -127,65 +105,13 @@
         </main>
     </div>
 
-    <!-- Hidden Data -->
-    <div style="display: none;" id="brief-data">KRATEX
+    <!-- Hidden Data -->"""
 
-DJ | Music Producer | Pioneer of M-House
+content = old_grid_pattern.sub(new_grid, content)
 
-Kratex is a Mumbai-based DJ and producer known for creating M-House — a fusion of Marathi music with house and techno. His sound blends Indian cultural elements with global electronic music, positioning him as a unique international act.
-
----
-
-Key Highlights
-
-* First Marathi track signed to Spinnin’ Records
-* Taambdi Chaamdi — 100M+ streams
-* Creator of the M-House genre
-* Co-founder of MVPMF (4,000+ attendees)
-
----
-
-Global Presence
-
-Performed across USA, Canada, Ireland, Australia, New Zealand, UAE, and major Indian cities including Mumbai, Pune, and Bangalore.
-
----
-
-Industry Support
-
-Supported by Afrojack, Alan Walker, Chris Lake, KSHMR, Timmy Trumpet, Blasterjaxx, Alok, and Carnage (Gordo).
-
----
-
-Digital Reach
-
-100M+ streams | 340K+ Instagram | 212K Shazams | 2.6M Apple Music plays | 20M YouTube views
-
----
-
-Media & Culture
-
-Featured on Zee Marathi Awards and Bigg Boss Marathi.
-Co-created MVPMF, bringing Marathi music into a modern festival format.
-
----
-
-Contact
-
-Rock Kacchi
-+91 9834179271
-rock@worldofvibes.com
-www.kratex.in</div>
-
-    <div style="display: none;" id="bio-data">Kratex Bio
-
-DJ/Producer | Pioneer of M-House
-
-Krunal Ghorpade, famously known as Kratex, is an acclaimed DJ and music producer hailing from Mumbai, India. His musical prowess is deeply rooted in his passion for Tech-house and Techno, blending these styles with the rich sounds of his Indian heritage to create the revolutionary genre M-House—a fusion of Marathi and House music. Kratex’s signature style combines modern tech elements with nostalgic millennial vibes, offering a unique experience that resonates with audiences globally.
-
-A visionary artist, Kratex is reshaping the global electronic music scene. His breakout track, Taambdi Chaamdi, signed with Spinnin’ Records, marked a historic moment as the first Marathi song to be released on an international label. The track has accumulated over 20 million streams, solidifying his status as a pioneering force in the industry.</div>
-
-    <!-- RABBIT HOLES (Full Screen Overlays) -->
+# Replace the modals
+old_modals_pattern = re.compile(r'<!-- RABBIT HOLES \(Full Screen Overlays\) -->(.*?)<!-- Toast Notification -->', re.DOTALL)
+new_modals = """<!-- RABBIT HOLES (Full Screen Overlays) -->
     
     <!-- RH: Bio & One Pager -->
     <div class="rabbit-hole" id="rh-bio-onepager">
@@ -343,23 +269,15 @@ A visionary artist, Kratex is reshaping the global electronic music scene. His b
         </div>
     </div>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="toast">COPIED</div>
+    <!-- Toast Notification -->"""
 
-    <script src="assets/js/script.js"></script>
-    <script>
-        // Inject data into modals on load
-        document.getElementById('target-bio-onepager').textContent = document.getElementById('brief-data').textContent + "
+content = old_modals_pattern.sub(new_modals, content)
 
----
+# Update the JS part
+old_js_pattern = re.compile(r"document\.getElementById\('target-brief'\)\.textContent = document\.getElementById\('brief-data'\)\.textContent;\s*document\.getElementById\('target-bio'\)\.textContent = document\.getElementById\('bio-data'\)\.textContent;")
+new_js = """document.getElementById('target-bio-onepager').textContent = document.getElementById('brief-data').textContent + "\\n\\n---\\n\\n" + document.getElementById('bio-data').textContent;"""
 
-" + document.getElementById('bio-data').textContent;
+content = old_js_pattern.sub(new_js, content)
 
-        // Set dynamic copy link for presskit
-        const pkCopyBtn = document.querySelector('#rh-presskit .small-copy');
-        if (pkCopyBtn) {
-            pkCopyBtn.setAttribute('data-copy', window.location.origin + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/assets/pdf/kratex_presskit_2026.pdf');
-        }
-    </script>
-</body>
-</html>
+with open("index.php", "w") as f:
+    f.write(content)
