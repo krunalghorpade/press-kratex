@@ -65,7 +65,7 @@
                 <div class="center-content" style="width: 100%; display: flex; flex-direction: column; padding-bottom: 3rem;">
                     <h2 style="margin-bottom: 1.5rem; text-align: left;">ASSET<br>REPO</h2>
                     
-                    <a href="https://www.dropbox.com/scl/fo/zwlmswazqe6ondrr3xlt9/h?rlkey=cdy4xowjmtwhw7dvvlgsezjgh&st=1n8qfjrp&dl=0" target="_blank" class="rh-row" style="padding: 0.5rem 0; border-bottom: 1px solid rgba(17,17,17,0.1);"><span class="rh-label" style="font-size: 1rem;">Show Videos</span><span class="rh-val" style="font-size: 0.8rem;">Dropbox ↗</span></a>
+                    <a href="https://www.dropbox.com/scl/fo/zwlmswazqe6ondrr3xlt9/h?rlkey=cdy4xowjmtwhw7dvvlgsezjgh&st=1n8qfjrp&dl=0" target="_blank" class="rh-row" style="padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.2);"><span class="rh-label" style="font-size: 1rem;">Show Videos</span><span class="rh-val" style="font-size: 0.8rem;">Dropbox ↗</span></a>
                     <a href="https://www.dropbox.com/scl/fo/3rrm3w8qax92fh7jehpu2/h?rlkey=4h57u39h923ukoinyejybsob4&st=2aovcnyv&dl=0" target="_blank" class="rh-row" style="padding: 0.5rem 0; border-bottom: none;"><span class="rh-label" style="font-size: 1rem;">Live LED Visuals</span><span class="rh-val" style="font-size: 0.8rem;">Dropbox ↗</span></a>
                 </div>
                 
