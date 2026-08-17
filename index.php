@@ -220,7 +220,7 @@ A visionary artist, Kratex is reshaping the global electronic music scene. His b
             
             <div class="rh-presskit-viewer" style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center; background: transparent; border: none; box-shadow: none;">
                 <a href="assets/pdf/kratex_presskit_2026.pdf" target="_blank" class="os-btn" style="width: 100%; max-width: 400px; padding: 2rem;">VIEW PRESSKIT ↗</a>
-                <a href="https://www.dropbox.com/scl/fi/u9ykxtk3gx8oid9esm5c4/Kratex-Tech-Hospitality-Rider.pdf?rlkey=9m1q8wjfsbqtqk0hf023q07tf&st=mpyh1he5&dl=0" target="_blank" class="os-btn" style="width: 100%; max-width: 400px; padding: 2rem;">VIEW TECH RIDER ↗</a>
+                <a href="https://www.dropbox.com/scl/fi/qd374nc82l8qii4mztu0q/Kratex-Tech-Hospitality-Rider.pdf?rlkey=o6pm7mlvkq54b4ip67fx0xx1a&dl=0" target="_blank" class="os-btn" style="width: 100%; max-width: 400px; padding: 2rem;">VIEW TECH RIDER ↗</a>
             </div>
         </div>
     </div>
@@ -349,11 +349,7 @@ A visionary artist, Kratex is reshaping the global electronic music scene. His b
     <script src="assets/js/script.js"></script>
     <script>
         // Inject data into modals on load
-        document.getElementById('target-bio-onepager').textContent = document.getElementById('brief-data').textContent + "
-
----
-
-" + document.getElementById('bio-data').textContent;
+        document.getElementById('target-bio-onepager').textContent = document.getElementById('brief-data').textContent + "\n\n---\n\n" + document.getElementById('bio-data').textContent;
 
         // Set dynamic copy link for presskit
         const pkCopyBtn = document.querySelector('#rh-presskit .small-copy');
