@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRATEX | PRESS</title>
-    <meta name="description" content="Kratex Electronic Press Kit - Press & Technical Assets. Pioneer of M-House.">
+    <title>Kratex Press Kit | Marathi House Music DJ & Producer</title>
+    <link rel="canonical" href="https://press.kratex.in/">
+    <meta name="description" content="Official press kit for Kratex (Krunal Ghorpade), Mumbai-based Marathi house music DJ and producer known for M-House and Taambdi Chaamdi.">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -22,6 +23,11 @@
         <header class="hero">
             <h1>Kratex Press Info</h1>
         </header>
+        <section aria-label="Kratex artist profile" style="max-width:1100px;margin:2rem auto;padding:0 1.5rem;line-height:1.6;">
+            <h2>Kratex: Marathi house music DJ and producer</h2>
+            <p>Kratex (Krunal Ghorpade) is a Mumbai-based DJ and producer known for M-House, a blend of Marathi music with house, tech-house and techno. With Shreyas, he created <em>Taambdi Chaamdi</em>, the first Marathi song featured on Spinnin’ Records’ official channel, as <a href="https://rollingstoneindia.com/taambdi-chaambdi-marathi-music-spotlight/">Rolling Stone India reported</a>. <a href="https://www.allaboutmusic.in/kratex/">All About Music</a> documents a sold-out seven-city USA tour. The song’s KSHMR remix later featured in Netflix’s <em>Best of the Best</em>, according to <a href="https://www.mid-day.com/amp/mumbai/mumbai-news/article/mumbai-diary-friday-dossier-23651761">Mid-Day</a>.</p>
+            <p>For the full artist story, visit <a href="https://kratex.in/about/">Kratex’s official biography</a>.</p>
+        </section>
         
         <div class="view-toggle">
             Index / Grid view
@@ -129,61 +135,32 @@
 
     <!-- Hidden Data -->
     <div style="display: none;" id="brief-data">KRATEX
+DJ | Music Producer | M-House Pioneer
 
-DJ | Music Producer | Pioneer of M-House
+Kratex (Krunal Ghorpade) is a Mumbai-based Marathi house music DJ and producer. His M-House sound blends Marathi language and culture with house, tech-house and techno.
 
-Kratex is a Mumbai-based DJ and producer known for creating M-House — a fusion of Marathi music with house and techno. His sound blends Indian cultural elements with global electronic music, positioning him as a unique international act.
+Key milestones
+* Taambdi Chaamdi, created with Shreyas, was the first Marathi song featured on Spinnin’ Records’ official channel (Rolling Stone India, 2024).
+* All About Music documents a sold-out seven-city USA tour.
+* Taambdi Chaamdi (KSHMR Remix) appeared in Netflix’s Best of the Best (Mid-Day, 2026).
+* FAKTA HOUSE is his twelve-track debut album.
 
----
+Independent sources
+https://rollingstoneindia.com/taambdi-chaambdi-marathi-music-spotlight/
+https://www.allaboutmusic.in/kratex/
+https://www.mid-day.com/amp/mumbai/mumbai-news/article/mumbai-diary-friday-dossier-23651761
 
-Key Highlights
-
-* First Marathi track signed to Spinnin’ Records
-* Taambdi Chaamdi — 100M+ streams
-* Creator of the M-House genre
-* Co-founder of MVPMF (4,000+ attendees)
-
----
-
-Global Presence
-
-Performed across USA, Canada, Ireland, Australia, New Zealand, UAE, and major Indian cities including Mumbai, Pune, and Bangalore.
-
----
-
-Industry Support
-
-Supported by Afrojack, Alan Walker, Chris Lake, KSHMR, Timmy Trumpet, Blasterjaxx, Alok, and Carnage (Gordo).
-
----
-
-Digital Reach
-
-100M+ streams | 340K+ Instagram | 212K Shazams | 2.6M Apple Music plays | 20M YouTube views
-
----
-
-Media & Culture
-
-Featured on Zee Marathi Awards and Bigg Boss Marathi.
-Co-created MVPMF, bringing Marathi music into a modern festival format.
-
----
-
-Contact
-
-Rock Kacchi
-+91 9834179271
-rock@worldofvibes.com
-www.kratex.in</div>
+Management and bookings
+Rock Kacchi | rock@worldofvibes.com | +91 98341 79271
+Official website: https://kratex.in/</div>
 
     <div style="display: none;" id="bio-data">Kratex Bio
 
-DJ/Producer | Pioneer of M-House
+Krunal Ghorpade, known as Kratex, is a Marathi house music DJ and producer based in Mumbai, India. He developed M-House by combining Marathi vocals and cultural references with house, tech-house and techno. His sets and original releases take that sound from Maharashtra into clubs and festivals internationally.
 
-Krunal Ghorpade, famously known as Kratex, is an acclaimed DJ and music producer hailing from Mumbai, India. His musical prowess is deeply rooted in his passion for Tech-house and Techno, blending these styles with the rich sounds of his Indian heritage to create the revolutionary genre M-House—a fusion of Marathi and House music. Kratex’s signature style combines modern tech elements with nostalgic millennial vibes, offering a unique experience that resonates with audiences globally.
+Kratex and rapper Shreyas created Taambdi Chaamdi. Rolling Stone India reported that it became the first Marathi song featured on Spinnin’ Records’ official channel. The KSHMR remix was later included in the 2026 Netflix film Best of the Best, according to Mid-Day. All About Music reports that Kratex completed a sold-out seven-city USA tour.
 
-A visionary artist, Kratex is reshaping the global electronic music scene. His breakout track, Taambdi Chaamdi, signed with Spinnin’ Records, marked a historic moment as the first Marathi song to be released on an international label. The track has accumulated over 20 million streams, solidifying his status as a pioneering force in the industry.</div>
+His debut album FAKTA HOUSE expands the M-House sound across twelve tracks. More information and current releases: https://kratex.in/</div>
 
     <!-- RABBIT HOLES (Full Screen Overlays) -->
     
